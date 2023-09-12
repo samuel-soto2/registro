@@ -36,6 +36,8 @@
             pass = new TextBox();
             muestra = new CheckBox();
             entrar = new Button();
+            label1 = new Label();
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -122,12 +124,40 @@
             entrar.Text = "Entrar";
             entrar.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(179, 517);
+            label1.Name = "label1";
+            label1.Size = new Size(154, 18);
+            label1.TabIndex = 6;
+            label1.Text = "¿No estas registrado?";
+            // 
+            // button1
+            // 
+            button1.FlatAppearance.BorderColor = Color.Red;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatAppearance.MouseDownBackColor = Color.Red;
+            button1.FlatAppearance.MouseOverBackColor = Color.Red;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = Color.Red;
+            button1.Location = new Point(203, 558);
+            button1.Name = "button1";
+            button1.Size = new Size(103, 31);
+            button1.TabIndex = 7;
+            button1.Text = "Registrarme";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(489, 617);
+            Controls.Add(button1);
+            Controls.Add(label1);
             Controls.Add(entrar);
             Controls.Add(muestra);
             Controls.Add(pass);
@@ -152,5 +182,7 @@
         private TextBox pass;
         private CheckBox muestra;
         private Button entrar;
+        private Label label1;
+        private Button button1;
     }
 }
