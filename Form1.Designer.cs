@@ -117,6 +117,7 @@
             entrar.FlatAppearance.MouseOverBackColor = Color.Blue;
             entrar.FlatStyle = FlatStyle.Flat;
             entrar.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            entrar.ForeColor = Color.White;
             entrar.Location = new Point(179, 425);
             entrar.Name = "entrar";
             entrar.Size = new Size(159, 51);
